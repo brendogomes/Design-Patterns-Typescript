@@ -16,6 +16,6 @@ export const MyDatabaseFunction = (function () {
       for (const user of users) {
         console.log(user);
       }
-    },
+    }
   };
 })();

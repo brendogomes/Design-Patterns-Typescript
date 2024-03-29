@@ -13,27 +13,27 @@
         + setAge(age: number)
 */
 export class YourClass {
-    constructor(
-        private name: string,
-        public surname: string,
-        protected age: number
-    ) {}
+  constructor(
+    private name: string,
+    public surname: string,
+    protected age: number
+  ) {}
 
-    public getName(): string {
-        return this.name;
-    }
+  public getName(): string {
+    return this.name;
+  }
 
-    public getAge(): number {
-        return this.age;
-    }
+  public getAge(): number {
+    return this.age;
+  }
 
-    public setName(name: string): void {
-        this.name = name;
-    }
+  public setName(name: string): void {
+    this.name = name;
+  }
 
-    public setAge(age: number): void {
-        this.age = age;
-    }
+  public setAge(age: number): void {
+    this.age = age;
+  }
 }
 
 /* --------------------------------------------------
@@ -64,11 +64,11 @@ export class Programmer extends Person {}
     > Operations
 */
 export class Car {
-    private engine: Engine;
+  private engine: Engine;
 
-    constructor(engine: Engine) {
-        this.engine = engine;
-    }
+  constructor(engine: Engine) {
+    this.engine = engine;
+  }
 }
 
 export class Engine {}
@@ -88,9 +88,9 @@ const car = new Car(engine);
     > Operations
 */
 export class Printer {
-    public print(document: Document): void {
-        console.log(`Printing ${document}`);
-    }
+  public print(document: Document): void {
+    console.log(`Printing ${document}`);
+  }
 }
 
 export class Document {}
@@ -122,23 +122,23 @@ export class Document {}
         + pause()
 */
 export interface RemoteControl {
-    play(): void;
-    pause(): void;
+  play(): void;
+  pause(): void;
 }
 
 export interface SoundControl extends RemoteControl {
-    changeRadio(): void;
+  changeRadio(): void;
 }
 
 export class Bluray implements RemoteControl {
-    play(): void {}
-    pause(): void {}
+  play(): void {}
+  pause(): void {}
 }
 
 export class Sound implements SoundControl {
-    changeRadio(): void {}
-    play(): void {}
-    pause(): void {}
+  changeRadio(): void {}
+  play(): void {}
+  pause(): void {}
 }
 
 /* --------------------------------------------------
@@ -155,17 +155,17 @@ export class Sound implements SoundControl {
         # makeNoise(): string
 */
 export abstract class Animal {
-    protected abstract makeNoise(): string;
+  protected abstract makeNoise(): string;
 
-    makeSound(): void {
-        console.log(this.makeNoise());
-    }
+  makeSound(): void {
+    console.log(this.makeNoise());
+  }
 }
 
 export class Dog extends Animal {
-    protected makeNoise(): string {
-        return 'au au';
-    }
+  protected makeNoise(): string {
+    return 'au au';
+  }
 }
 
 const dog = new Dog();

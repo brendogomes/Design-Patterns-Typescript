@@ -15,5 +15,5 @@ export const MyDatabaseModule = {
     for (const user of users) {
       console.log(user);
     }
-  },
+  }
 };
