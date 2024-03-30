@@ -32,21 +32,6 @@
     - Builder
     - Prototype
     - Singleton
-        - Intenção: garantir que uma classe tenha somente uma instância no programa e fornecer um ponto de acesso global para a mesma.
-        - Geralmente usado para acesso a recursos compartilhados, como acesso à base de dados, interfaces gráficas, sistema de arquivos, servidores de arquivos, logger e mais.
-        - Também usados para substituir variavéis globais, como em casos de uso de objetos de configurações do sistema como um todo.
-        - Uma vantagem do Singleton é que podemos proteger a instância com encapsulamento, evitando que outro código sobrescreva seu valor.
-
-        - Consequências boas:
-            - Acesso controlado à instância única.
-            - É fácil permitir um número maior de instâncias caso ele mude.
-            - Usa Lazy instantiation, o Singleton só é criado no momento do uso.
-            - Substitui variáveis globais.
-
-        - Consequências ruins:
-            - É mais difícil de testar.
-            - Viola o princípio da responsabilidade única.
-            - Requer tratamento especial em casos de concorrência.
 
 - Structural
     - Adapter
@@ -76,4 +61,4 @@
 - Open/Closed Principle (Princípio do aberto/fechado) - Classes, objetos e métodos devem estar abertos para extensão, mas fechados para modificações.
 - Liskov Substitution Principle (Princípio da substituição de Liskov) - classes derivadas devem ser capazes de substituir totalmente classes base.
 - Interface Segregation Principle (Princípio da segregação de interface) - os clientes não devem ser forçados a depender de interfaces que não utilizam.
-- Dependency Inversion Principle (Princípio da inversão de dependência) - módulos de alto nível não devem ser dependentes do módulo de baixo nível; ambos devem depender de abstrações. Detalhes devem depender das abstrações, não o inverso.
+- Dependency Inversion Principle (Princípio da inversão de dependência) - módulos de alto nível não devem ser dependentes do módulo de baixo nível; ambos devem depender de abstrações. Detalhes devem depender das abstrações, não o inverso. 
