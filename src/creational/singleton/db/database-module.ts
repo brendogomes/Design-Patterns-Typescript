@@ -2,7 +2,7 @@ import { User } from '../interfaces/user';
 
 const users: User[] = [];
 
-export const MyDatabaseModule = {
+export const DatabaseModule = {
   addUser(user: User): void {
     users.push(user);
   },

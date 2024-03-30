@@ -1,6 +1,6 @@
 import { User } from '../interfaces/user';
 
-export const MyDatabaseFunction = (function () {
+export const DatabaseFunction = (function () {
   const users: User[] = [];
 
   return {
