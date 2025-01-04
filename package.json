@@ -1,0 +1,16 @@
+{
+  "name": "design-patterns-typescript",
+  "version": "1.0.0",
+  "description": "Design patterns são soluções reutilizáveis para problemas comuns que surgem durante o desenvolvimento de software. Eles são abordagens generalizadas, baseadas em experiências e boas práticas, que podem ser aplicadas em diferentes contextos e situações de programação. Os padrões de design ajudam a criar sistemas mais flexíveis, escaláveis e de fácil manutenção, evitando a necessidade de reinventar a roda a cada novo projeto.",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.2"
+  }
+}
