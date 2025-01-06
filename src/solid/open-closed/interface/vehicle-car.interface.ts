@@ -1,5 +1,6 @@
 export default interface VehicleCar {
     startVehicle(): void;
+    
     configure(        
         color: string,
         year: number,

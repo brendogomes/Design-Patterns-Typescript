@@ -15,6 +15,7 @@ export default class Car implements VehicleCar {
     startVehicle(): void {
         console.log('Ligando o motor.');
     }
+    
     configure(color: string, year: number, engine: number, seats: number, doors: number): void {
         console.log(`Criando carro: ${color}, ${year}, ${engine}, ${seats}, ${doors}`);
 
