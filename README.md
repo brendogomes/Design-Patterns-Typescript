@@ -45,8 +45,4 @@ Uma classe não deve ser forçada a depender de métodos que não usa. Em vez de
 
 Exemplo: Se você tem uma interface Animal com métodos como voar(), nadar() e correr(), uma classe Cachorro não deveria ser obrigada a implementar o método voar(), já que ele não voa. Em vez disso, você pode criar interfaces como Nadador e Corredor para garantir que cada classe implemente apenas os métodos que fazem sentido para ela.
 
-#### D - Dependency Inversion Principle (DIP) / Princípio da Inversão de Dependência
 
-Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações (interfaces ou classes abstratas). Além disso, as abstrações não devem depender de detalhes, mas os detalhes devem depender das abstrações.
-
-Exemplo: Em vez de uma classe Pedido depender diretamente de uma classe BancoDeDados, ela deve depender de uma abstração (como uma interface Repositorio). Isso permite que você altere a implementação do banco de dados sem modificar a lógica de negócio da classe Pedido.

@@ -1,7 +1,9 @@
-import Client from "./class/client.class";
-import Notify from "./class/notify.class";
+import { OrderService } from "./class/OrderService";
+import { ReportService } from "./class/ReportService";
 
-const client = new Client(1, 'Brendo');
-const notify = new Notify(client);
+const orderService = new OrderService();
+orderService.processOrder("Order 1");
+orderService.processOrder("Order 2");
 
-notify.sendEmail()
+const reportService = new ReportService(["Order 1", "Order 2"]);
+reportService.generateSalesReport();
